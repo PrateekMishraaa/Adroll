@@ -9,11 +9,11 @@ const Navbar = () => {
     <nav className="border-b border-gray-300">
       <div className="h-16 w-full px-6 flex items-center justify-between text-black">
         {/* Logo */}
-        <div className="font-bold text-gray-700 text-xl">AdRoll</div>
+        <div className="font-bold text-gray-700 text-xl" >AdRoll</div>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex gap-10 text-gray-600 font-light">
-          <li><a href="#">Why AdRoll?</a></li>
+          <li><a href="/about">Why AdRoll?</a></li>
           <li><a href="#">Marketing Platform</a></li>
           <li><a href="#">Solutions</a></li>
           <li><a href="#">Pricing & Packages</a></li>
@@ -43,7 +43,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="lg:hidden bg-white px-6 pb-6">
           <ul className="flex flex-col gap-4 text-gray-600 font-light mt-4">
-            <li><a href="#">Why AdRoll?</a></li>
+            <li><a href="/about">Why AdRoll?</a></li>
             <li><a href="#">Marketing Platform</a></li>
             <li><a href="#">Solutions</a></li>
             <li><a href="#">Pricing & Packages</a></li>
