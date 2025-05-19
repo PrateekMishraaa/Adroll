@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import axios from 'axios';
+import Footer from '../Components/Footer';
 
 const Request = () => {
   const [data, setData] = useState([]);
@@ -13,7 +14,7 @@ const Request = () => {
         const response = await axios.get('http://localhost:3000/api/allrequest');
         console.log("API response:", response.data);
 
-        // Access the 'data' field inside the response
+       
         if (Array.isArray(response.data.data)) {
           setData(response.data.data);
         } else {
@@ -33,7 +34,7 @@ const Request = () => {
   return (
     <>
       <Navbar />
-      <section className="min-h-screen w-full px-10 py-10 bg-gray-100">
+      <section className="min-h-screen w-full px-10 py-10 bg-[#d7f2fb]">
         <h1 className="text-3xl font-bold mb-6">All Requests</h1>
 
         {loading ? (
@@ -58,6 +59,7 @@ const Request = () => {
           </div>
         )}
       </section>
+      <Footer/>
     </>
   );
 };
