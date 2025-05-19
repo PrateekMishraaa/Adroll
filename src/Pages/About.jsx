@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../Components/Footer';
 const About = () => {
     const navigate = useNavigate()
     const [form,setForm] = useState({
@@ -121,6 +122,7 @@ const About = () => {
           </div>
         ))}
       </section>
+      <Footer/>
       <ToastContainer/>
     </>
   );

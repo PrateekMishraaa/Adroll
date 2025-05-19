@@ -9,20 +9,21 @@ const Navbar = () => {
     <nav className="border-b border-gray-300">
       <div className="h-16 w-full px-6 flex items-center justify-between text-black">
         {/* Logo */}
-        <div className="font-bold text-gray-700 text-xl" >AdRoll</div>
+        <a className="font-bold text-gray-700 text-xl" href='/' >AdRoll</a>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex gap-10 text-gray-600 font-light">
           <li><a href="/about">Why AdRoll?</a></li>
-          <li><a href="#">Marketing Platform</a></li>
+          <li><a href="/marketing">Marketing Platform</a></li>
           <li><a href="#">Solutions</a></li>
           <li><a href="#">Pricing & Packages</a></li>
           <li><a href="#">Resources</a></li>
+           <li><a href="/request">ClientRequests</a></li>
         </ul>
 
         {/* Desktop Right Buttons */}
         <div className="hidden lg:flex items-center gap-6">
-          <a href="#" className="text-gray-600 font-semibold">Log in</a>
+          <a href="/signin" className="text-gray-600 font-semibold">Log in</a>
           <a
             href="/signup"
             className="px-6 py-2 rounded-xl bg-purple-800 text-white font-semibold"
@@ -45,9 +46,10 @@ const Navbar = () => {
           <ul className="flex flex-col gap-4 text-gray-600 font-light mt-4">
             <li><a href="/about">Why AdRoll?</a></li>
             <li><a href="#">Marketing Platform</a></li>
-            <li><a href="#">Solutions</a></li>
+            <li><a href="/marketing">Solutions</a></li>
             <li><a href="#">Pricing & Packages</a></li>
             <li><a href="#">Resources</a></li>
+             <li><a href="/request">ClientRequests</a></li>
           </ul>
           <div className="mt-6 flex flex-col gap-3">
             <a href="#" className="text-gray-600 font-semibold">Log in</a>
